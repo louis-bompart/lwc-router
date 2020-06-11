@@ -1,6 +1,7 @@
 <template>
     <template for:each={pages} for:item="page">
-        <c-router-page key={page.id} page-id={page.id} page-template={page.template} selected-page-id={currentPageId}>
+        <c-router-page onnewpageselected={handleNewPageSelected} key={page.id} page-id={page.id}
+            page-template={page.template} selected-page-id={currentPageId}>
         </c-router-page>
     </template>
 </template>

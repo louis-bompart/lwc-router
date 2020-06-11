@@ -37,6 +37,14 @@ export default class Router extends LightningElement {
         this.currentPageId = pageId;
     }
 
+    /**
+     * 
+     * @param {CustomEvent} event 
+     */
+    handleNewPageSelected(event) {
+        this.selectPage(event.detail)
+    }
+
     connectedCallback() {
         this.currentPageId = this.pages[0].id
     }

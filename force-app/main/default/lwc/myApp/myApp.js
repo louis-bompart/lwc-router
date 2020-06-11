@@ -14,7 +14,6 @@ export default class MyApp extends LightningElement {
     /** @type {?Router} */
     _router;
     connectedCallback() {
-        debugger;
     }
     /**
      * @type {!Router}

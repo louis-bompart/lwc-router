@@ -1,5 +1,5 @@
 <template>
     <template if:true={isSelected}>
-        <c-page-element page-template={pageTemplate}></c-page-element>
-    </template>    
+        <c-page-element onnewpageselected={handleNewPageSelected} page-template={pageTemplate}></c-page-element>
+    </template>
 </template>
